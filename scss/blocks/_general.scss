@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
+}
+.cont {
+  margin: 0 auto;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+// @media on screen {
+//   .cont {
+//     padding-left: 32px;
+//     padding-right: 32px;
+//   }
+// }

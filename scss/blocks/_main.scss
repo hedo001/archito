@@ -1,0 +1,196 @@
+// @import "../main.scss";
+
+.main__wrp {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+  width: 100%;
+}
+.main__top {
+  margin-bottom: 100px;
+}
+.main__content {
+  width: 40%;
+  margin-right: 40px;
+}
+.main__content h1 {
+  color: #000f2d;
+  font-size: 74px;
+  font-weight: 800;
+  line-height: 82px;
+  letter-spacing: -1.48px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.main__content p {
+  color: #000f2d;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.main__input {
+  height: 88px;
+  width: 80%;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  justify-content: space-between;
+  box-shadow: 10px 0px 100px 0px rgba(0, 0, 0, 0.1);
+}
+.main__input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 20px;
+  outline: none;
+  font-size: 20px;
+}
+.main__input input::placeholder {
+  color: #8cadf2;
+  font-size: 20px;
+  line-height: 24px;
+}
+.main__input button {
+  height: 100%;
+  width: 88px;
+  font-size: 20px;
+  background-color: $main__blue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.main__img {
+  position: relative;
+}
+.main__img-list {
+  margin-right: -40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-52%);
+  list-style-type: none;
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 40px;
+  border-radius: 20px;
+  margin-right: 40px;
+  overflow: hidden;
+  width: 170px;
+  height: 474px;
+  border-radius: 20px;
+}
+.item1 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(../../images/main__img.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.item2 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(https://images.unsplash.com/photo-1689323523102-d1acfc8ff24c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.item3 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(https://images.unsplash.com/photo-1569810861372-e9860b7bbc65?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.item4 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url(https://images.unsplash.com/photo-1556594472-e9b933db923c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.list__item__content {
+  visibility: hidden;
+}
+.list__item__content h2 {
+  color: #fff;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.list__item__content p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+.active {
+  animation: biggy 0.8s ease-in-out forwards;
+  .list__item__content {
+    animation: appear 0.7s ease 0.4s forwards;
+  }
+}
+@keyframes biggy {
+  0% {
+  }
+
+  100% {
+    width: 400px;
+  }
+}
+@keyframes appear {
+  0% {
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.main__bottom {
+  justify-content: center;
+}
+.main__bottom__list-item {
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 60px;
+  border-right: 1px solid #b3ccff;
+  background: #fff;
+  text-align: center;
+}
+.main__bottom__list-item span {
+  margin-top: 10px;
+  color: #000f2d;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 42px;
+  letter-spacing: -0.64px;
+}
+.main__bottom__list-item p {
+  margin-top: 10px;
+  color: #000f2d;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+}

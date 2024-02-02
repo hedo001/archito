@@ -1,0 +1,48 @@
+.header__wrp {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  justify-content: space-between;
+}
+.header__left {
+  width: 40%;
+}
+.header__logo {
+  margin-right: 60px;
+}
+.header__tel {
+  width: 100%;
+  gap: 10px;
+  height: fit-content;
+}
+.header__tel a {
+  color: $main__blue;
+  font-size: 18px;
+  line-height: 23px;
+  width: 170px;
+}
+.header__nav {
+  width: 100%;
+}
+.header__list {
+  list-style-type: none;
+  margin-left: 178px;
+  margin-right: 178px;
+}
+.header__list li {
+  margin-right: 60px;
+}
+.header__list li a {
+  color: #000;
+  line-height: 20px;
+}
+.header__btn {
+  height: 55px;
+  padding: 16px 40px;
+  border-radius: 6px;
+  background: $main__blue;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 23px;
+  cursor: pointer;
+}
